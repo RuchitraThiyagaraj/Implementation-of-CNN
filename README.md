@@ -68,23 +68,18 @@ class EarlyStoppingCallback(tf.keras.callbacks.Callback):
             print("\nReached 99.5% accuracy so cancelling training!")
 import tensorflow as tf
 def convolutional_model():
-    model = tf.keras.models.Sequential([ 
-        
-      
-        tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
-        
-        
-        tf.keras.layers.MaxPooling2D(2, 2),
-        
-     
-        tf.keras.layers.Flatten(),
-        
-     
-        tf.keras.layers.Dense(128, activation='relu'),
-        
-      
-        tf.keras.layers.Dense(10, activation='softmax')
-    ]) 
+model=Sequential([
+    Input(shape=(28,28,1)),
+    Conv2D(64,(3,3),activation='relu',padding='same',name='conv1'),
+    MaxPooling2D(2,2),
+
+    Conv2D(64,(3,3),activation='relu',padding='same',name='conv2'),
+    MaxPooling2D(2,2),
+
+    Flatten(),
+    Dense(128,activation='relu'),
+    Dense(10,activation='softmax')
+])
 
     model.compile(
         optimizer='adam',
