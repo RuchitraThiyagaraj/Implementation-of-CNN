@@ -102,11 +102,12 @@ training_history = model.fit(training_images, training_labels, epochs=10, callba
 
 ### Reshape and Normalize output
 
-![image](https://github.com/user-attachments/assets/26edec77-e5af-48ab-b81a-d8dc2b636739)
+![image](https://github.com/user-attachments/assets/84bfc8af-0de4-470e-a877-6064ae5f99c6)
 
 
 ### Training the model output
-![365533180-7cddde1a-6358-459a-bd7b-28d86100cd52](https://github.com/user-attachments/assets/4ed0491e-47df-47f3-8c78-31ed1b6d148a)
+
+![image](https://github.com/user-attachments/assets/f6899776-a0d5-4d63-ba63-be30ce151472)
 
 
 ## RESULT
